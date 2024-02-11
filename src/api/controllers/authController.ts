@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 import CustomError from '../../classes/CustomError';
 import {LoginUser, UserOutput} from '../../types/DBTypes';
 import {LoginResponse} from '../../types/MessageTypes';
-import userModel from '../models/userModel';
+import {userModel} from '../models/userModel';
 import bcrypt from 'bcryptjs';
 
 const login = async (

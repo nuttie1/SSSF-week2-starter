@@ -112,6 +112,8 @@ const getCurrentUser = (
           reject(err);
         } else {
           const user = response.body;
+          console.log(url);
+          console.log('getCurrentUser', user);
           expect(user).toHaveProperty('_id');
           expect(user).toHaveProperty('user_name');
           expect(user).toHaveProperty('email');
